@@ -7,6 +7,7 @@ const accessChat = asyncHandler(async (req, res) => {
 
   if (!userId) {
     console.log("UserId param not sent with request");
+    // console.log("checking");
     return res.sendStatus(400);
   }
 

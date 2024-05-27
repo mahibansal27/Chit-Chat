@@ -33,6 +33,7 @@ const sendMessage = asyncHandler(async (req, res) => {
     res.json(message);
   } catch (error) {
     res.status(400);
+    //console.log(error.message);
     throw new Error(error.message);
   }
 });
